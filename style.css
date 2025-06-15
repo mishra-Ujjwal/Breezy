@@ -1,0 +1,180 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    color: white;
+    font-family: Outfit;
+}
+nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #111111;
+    padding-top: 20px;
+    padding-left: 150px;
+    padding-right: 150px;
+    height: 80px;
+    z-index: 100;
+}
+nav .items{
+    display: flex;
+    gap: 20px;
+    text-transform: uppercase;
+}
+nav .items h4{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+}
+nav .items h4:hover{
+    color: #0BA34D;
+
+}
+nav h1{
+    font-size: 2.5vw;
+}
+nav button{
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 20px;
+    font-weight: 300;
+    border-radius: 20px;
+    background-color: #0BA34D;
+    color: white;
+    border: none;
+}
+nav button img{
+    margin-left: 10px;
+    height: 15px;
+}
+
+
+
+
+.nav-bottom .bottom-div span:hover{
+   color: white;
+   opacity: 1;
+   
+}
+.page1 {
+    min-height: 100vh;
+    background-color: #111111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.page1 h1 {
+    font-weight: 900;
+    font-size: 7vw;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+.page1 .heading{
+    margin-top: 200px;
+}
+
+
+.page1 h1 span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5vw;
+    height: 5vw;
+    margin-top: -1vw;
+    vertical-align: middle;
+    background-color: #0BA34D;
+    border-radius: 50%;
+    margin-left: -0.5vw;
+}
+
+span img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.page1 p {
+    margin-top: 20px;
+    font-size: 1.3vw;
+}
+
+.page1 p span {
+    color: #0BA34D;
+}
+
+.page2 {
+    height: 100vh;
+    background-color: rgb(240, 63, 63);
+}
+.movingDiv{
+    margin-top:  50px;
+    
+    display: flex;
+   position: relative;
+    width: 55%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.movingDiv .move{
+    
+   animation-name: movelogo;
+   animation-duration: 7s;
+   animation-timing-function: linear;
+   animation-iteration-count: infinite;
+}
+
+.movingDiv .move img{
+     height: 33px;
+     margin: 35px;
+     filter: grayscale(200%) brightness(0.9) contrast(150%);
+}
+.blur-left{
+    background: linear-gradient(to left,transparent,#111111);
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.blur-right{
+    background: linear-gradient(to right,transparent,#111111);
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+@keyframes movelogo {
+      0%{
+        transform: translateX(0);
+        
+      }
+      100%{
+        transform: translateX(-100%);
+        
+      }
+}
+
+.videoSection{
+    margin-top: 50px;
+    border: 3px solid white; 
+    border-radius: 50px;  
+    overflow: hidden;
+}
