@@ -115,11 +115,6 @@ span img {
 .page1 p span {
     color: #0BA34D;
 }
-
-.page2 {
-    height: 100vh;
-    background-color: rgb(240, 63, 63);
-}
 .movingDiv{
     margin-top:  50px;
     
@@ -174,7 +169,37 @@ span img {
 
 .videoSection{
     margin-top: 50px;
+    padding-bottom: 3vw;
+    
+}
+.videoSection video{
     border: 3px solid white; 
-    border-radius: 50px;  
-    overflow: hidden;
+    border-radius: 50px; 
+    
+}
+.page2 {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    
+    padding: 2vw 9vw;
+    background-color: #111111;
+}
+hr{
+    height: 1px;
+    width: 82%;
+    background-color: grey;
+    border: none;
+}
+.page2-left{
+    height: 100%;
+    width: 40%;
+    background-color: #333;
+}
+.page2-right{
+    height: 100%;
+    width: 50%;
+    background-color: #333;
 }
