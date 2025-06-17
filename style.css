@@ -20,8 +20,8 @@ nav{
     width: 100%;
     background-color: #111111;
     padding-top: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
+    padding-left: 130px;
+    padding-right: 130px;
     height: 80px;
     z-index: 100;
 }
@@ -169,13 +169,39 @@ span img {
 
 .videoSection{
     margin-top: 50px;
-    padding-bottom: 3vw;
+      
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
     
 }
 .videoSection video{
     border: 3px solid white; 
-    border-radius: 50px; 
+    border-radius: 50px;  
+    overflow: hidden;
+}
+.showReelImg{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #008000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    pointer-events: auto; 
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    cursor: pointer;
+    ransition: all 0.3s ease;
+}
+.showReelImg p{
+    font-size: 18px;
     
+    width: 80%;
 }
 .page2 {
     height: 100vh;
@@ -183,9 +209,10 @@ span img {
     align-items: center;
     justify-content: space-between;
     position: relative;
-    
     padding: 2vw 9vw;
+    padding-top: 5vw;
     background-color: #111111;
+    
 }
 hr{
     height: 1px;
@@ -193,13 +220,78 @@ hr{
     background-color: grey;
     border: none;
 }
+
 .page2-left{
     height: 100%;
     width: 40%;
-    background-color: #333;
 }
 .page2-right{
     height: 100%;
     width: 50%;
-    background-color: #333;
+    
 }
+ .page2-left p:nth-child(1){
+    margin-top: 50px;
+    font-size: 22px;
+    width: 52%;
+    font-weight: 200;
+ }
+ .page2-left p:nth-child(2){
+    font-size: 20px;
+    margin-top: 450px;
+    font-weight: 200;
+
+ }
+ .page2-right .first{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    padding: 2vw 0vw;
+ }
+ .page2-right .first h4{
+    width: 70%;
+    font-size: 28px;
+    font-weight: 400;
+    font-weight: 300;
+text-transform: capitalize;
+cursor: pointer;
+opacity: 0.7;
+
+ }
+ .page2-right .first p{
+    margin-right: 50px;
+    font-weight: 300;
+    opacity: 0.7;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     cursor: pointer;
+     transition: all 0.3s ease;
+    }
+ .page2-right .first img{
+    border-radius: 50%;
+    background-position: 220%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+ }
+ .page2-right i{
+    transition: all ease 0.5s;
+    transform: rotate(45deg);
+ }
+ .first h4:hover{
+    opacity: 0.9;
+ }
+ .first:hover p {
+  color: #00ff6e; /* green text for <p> */
+}
+ .page2-right .first:hover p i {
+   transform: rotate(-10.5deg) scale(1.5);
+   color: #00ff6e;
+ }
+
+ p{
+ text-transform: capitalize;
+ }
