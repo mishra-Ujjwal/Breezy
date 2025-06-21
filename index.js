@@ -336,24 +336,24 @@ gsap.from(".uidesign .list div", {
 })
 
 var tl = gsap.timeline();
-tl.from(".page1",{
-   opacity:0,
+tl.from(".page1", {
+   opacity: 0,
 })
-tl.from(".page1",{
-   transform:"scaleX(0.7) scaleY(0.08)  translateY(-200%)",
-   duration:1,
-   ease:"expo.out",
+tl.from(".page1", {
+   transform: "scaleX(0.7) scaleY(0.08)  translateY(-200%)",
+   duration: 0.8,
+   ease: "expo.out",
 })
-tl.from("nav",{
-   opacity:0,
-},"-=0.25")
-tl.from(".page1 div, .page1 p",{
-   opacity:0,
-},"-=0.25")
+tl.from("nav", {
+   opacity: 0,
+}, "-=0.25")
+tl.from(".page1 div, .page1 p", {
+   opacity: 0,
+}, "-=0.25")
 
 tl.from(".heading h1", {
    opacity: 0,
    y: 40,
-   stagger:0.2,
-   rotate:2,
+   stagger: 0.2,
+   rotate: 2,
 }, "-=0.5");
